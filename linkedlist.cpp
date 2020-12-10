@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-struct Node{
+struct Node{ // Node is a self referential structure
     int data;
-    Node *next;
+    Node *next; //Here it referring to it's own type
     Node(int data){
         this->data = data;
         this->next = NULL;
